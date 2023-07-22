@@ -6,7 +6,8 @@ function countZeros(n) {
     str += i;
   }
 
-  return str.split(0).length - 1;
+  // return str.split(0).length - 1;
+  return str.match(/0/g).length;
 }
 
-console.log(countZeros(50));
+console.log(countZeros(10000000));
